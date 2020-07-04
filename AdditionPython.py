@@ -1,0 +1,5 @@
+fin = open("addin.txt", "r")
+fout = open("addout.txt", "w")
+fout.write(str(sum(map(int, fin.readline().split()))))
+fin.close()
+fout.close()
